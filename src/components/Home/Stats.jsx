@@ -1,6 +1,6 @@
 import React from "react";
 import { Users, Presentation, Handshake } from "lucide-react";
-import { hiringPartners } from "../data/tronData";
+import { hiringPartners } from "../../data/tronData";
 
 export default function Stats() {
   const cards = [

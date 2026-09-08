@@ -21,12 +21,12 @@ export default function Moments() {
   ];
 
   return (
-    <section className="relative py-24 bg-transparent overflow-hidden">
+    <section className="relative py-14 sm:py-20 lg:py-24 bg-transparent overflow-hidden">
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 text-center">
         
         {/* Title Matching Screenshot 3 */}
-        <h2 className="text-4xl sm:text-6xl font-extrabold tracking-tight mb-16">
+        <h2 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-10 sm:mb-16">
           <span className="text-[#d946ef] drop-shadow-[0_0_20px_rgba(217,70,239,0.7)] block">
             Rewind
           </span>
@@ -34,11 +34,11 @@ export default function Moments() {
         </h2>
 
         {/* 3 Video Cards Carousel (Screenshot 3 Match) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto mb-8 sm:mb-10">
           {reels.map((reel, idx) => (
             <div
               key={reel.id}
-              className={`relative rounded-2xl overflow-hidden aspect-[9/14] bg-[#140b20] shadow-2xl transition-all duration-300 ${
+              className={`relative rounded-2xl overflow-hidden aspect-[9/12] sm:aspect-[9/14] bg-[#140b20] shadow-2xl transition-all duration-300 ${
                 idx === 0
                   ? 'border-2 border-cyan-400 shadow-[0_0_25px_rgba(6,182,212,0.4)]'
                   : 'border border-purple-500/20'

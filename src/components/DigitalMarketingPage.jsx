@@ -238,7 +238,7 @@ export default function DigitalMarketingPage({ onOpenModal, onNavigate }) {
   };
 
   return (
-    <div className="relative bg-black text-white min-h-screen overflow-hidden">
+    <div className="relative bg-black bg-cyber-grid-purple text-white min-h-screen overflow-hidden">
       {/* Background Cyber Ambient Lights */}
       <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[750px] h-[350px] bg-purple-900/15 rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute top-[1200px] left-1/4 -translate-x-1/2 w-[600px] h-[400px] bg-purple-900/10 rounded-full blur-[150px] pointer-events-none" />

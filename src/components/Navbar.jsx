@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { assets } from "../data/tronData";
 import { ChevronDown, Menu, X } from "lucide-react";
 
-export default function Navbar({ onOpenModal, currentPage = "home", onNavigate }) {
+export default function Navbar({ onOpenModal, currentPage = "home", onNavigate, overlay = false }) {
   const navLinks = ["Home", "Course", "Blog", "About"];
 
   const [courseDropdownOpen, setCourseDropdownOpen] = useState(false);
@@ -205,8 +205,8 @@ export default function Navbar({ onOpenModal, currentPage = "home", onNavigate }
 
   return (
     <header
-      className="
-        relative
+      className={`
+        ${overlay ? "absolute" : "relative"}
         z-50
         w-full
         py-3
@@ -218,7 +218,7 @@ export default function Navbar({ onOpenModal, currentPage = "home", onNavigate }
         mt-2
         sm:mt-3
         mb-2
-      "
+      `}
     >
       {/* ================================================= */}
       {/* MAIN NAVBAR */}

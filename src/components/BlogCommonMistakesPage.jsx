@@ -8,7 +8,7 @@ export default function BlogCommonMistakesPage({ onNavigate }) {
   }, []);
 
   return (
-    <div className="relative bg-black text-white min-h-screen overflow-hidden">
+    <div className="relative bg-black bg-cyber-grid-purple text-white min-h-screen overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 pb-24">
 
         {/* Back navigation */}

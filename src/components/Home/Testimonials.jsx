@@ -108,10 +108,10 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="relative py-28 bg-transparent overflow-hidden select-none">
+    <section className="relative py-16 sm:py-20 lg:py-28 bg-transparent overflow-hidden select-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mb-16">
         {/* Title Matching Screenshot Exactly (Left-aligned) */}
-        <h2 className="text-4xl sm:text-6xl lg:text-[62px] font-extrabold tracking-tight text-white pl-2 sm:pl-4">
+        <h2 className="text-3xl sm:text-5xl lg:text-[62px] font-extrabold tracking-tight text-white pl-2 sm:pl-4">
           What Industry{' '}
           <span className="text-[#d946ef] drop-shadow-[0_0_0px_rgba(217,70,239,0.7)] font-extrabold">
             Experts Say!

@@ -1,6 +1,6 @@
 import React from "react";
 import { Flame, Mail } from "lucide-react";
-import { assets } from "../data/tronData";
+import { assets } from "../../data/tronData";
 
 export default function Hero({ onOpenModal }) {
   return (

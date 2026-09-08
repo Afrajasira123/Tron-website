@@ -124,7 +124,7 @@ export default function BlogPage({ onOpenModal, onNavigate }) {
   };
 
   return (
-    <div className="relative bg-black text-white min-h-screen overflow-hidden">
+    <div className="relative bg-black bg-cyber-grid-purple text-white min-h-screen overflow-hidden">
       {/* Ambient background glows matching Tron aesthetic */}
       <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-purple-900/15 rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute top-[800px] left-1/4 -translate-x-1/2 w-[550px] h-[400px] bg-fuchsia-950/10 rounded-full blur-[160px] pointer-events-none" />

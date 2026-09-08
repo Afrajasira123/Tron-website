@@ -1,12 +1,10 @@
-import React from 'react';
-import { assets } from '../data/tronData';
+import React from "react";
+import { assets } from "../../data/tronData";
 
 export default function Ecosystem() {
   return (
     <section className="relative py-24 bg-transparent overflow-hidden">
-      
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 text-center">
-        
         {/* Title Matching Screenshot 4 & 5 */}
         <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-6">
           “Tron : Your Success Partners”
@@ -14,7 +12,10 @@ export default function Ecosystem() {
 
         {/* Subtitle */}
         <p className="max-w-3xl mx-auto text-xs sm:text-sm text-gray-400 font-light leading-relaxed mb-16">
-          Tron isn't just a place to learn; it's where ambition meets opportunity across all digital fields. With branches like Tron Digital, Tron Technology, Tron Marketing, and Tron Studio, we partner with top professionals to provide insights and hands-on experiences that are crucial for success.
+          Tron isn't just a place to learn; it's where ambition meets opportunity across all digital
+          fields. With branches like Tron Digital, Tron Technology, Tron Marketing, and Tron Studio,
+          we partner with top professionals to provide insights and hands-on experiences that are
+          crucial for success.
         </p>
 
         {/* 4 Brand Logos Side-by-Side (Exact Screenshot 5 Match) */}
@@ -33,7 +34,6 @@ export default function Ecosystem() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

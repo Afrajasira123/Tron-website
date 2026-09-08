@@ -197,27 +197,28 @@ export default function MultimediaPage({ onOpenModal }) {
       {/* ========================================================================= */}
       {/* 1. HERO SECTION (Screenshot 1 Exact Match) */}
       {/* ========================================================================= */}
-      <section className="relative overflow-hidden pt-4 sm:pt-8 lg:pt-10 pb-16 sm:pb-20 lg:pb-24 min-h-[460px] sm:min-h-[520px] lg:min-h-[580px] flex items-center">
+      <section className="relative overflow-hidden pt-24 sm:pt-28 lg:pt-32 pb-16 sm:pb-20 lg:pb-24 min-h-[460px] sm:min-h-[520px] lg:min-h-[580px] flex items-center">
         {/* Exact Figma Background Wave PNG with hexagons, particles & fluid curve */}
         <img
           src="/1b511a9bfee094c1138078cba513f7a70fa33a32.png"
           alt=""
-          className="absolute left-0 -top-20 sm:-top-24 lg:-top-28 w-full h-[520px] sm:h-[600px] lg:h-[680px] object-full object-top select-none pointer-events-none z-0 brightness-[0.200] saturate-[0.75] hue-rotate-[15deg] opacity-90"
+          className="absolute left-0 -top-10 sm:-top-12 lg:-top-16 w-full h-[520px] sm:h-[600px] lg:h-[670px] object-full
+           object-top select-none pointer-events-none z-0 brightness-[0.25] saturate-[0.7] hue-rotate-[15deg] opacity-90"
         />
 
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center">
+        <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 pt-4 lg:pt-0">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-10 items-center ">
             {/* Left Column: Headline and Content matching Screenshot 1 */}
-            <div className="lg:col-span-6 text-left">
-              <h1 className="text-2xl sm:text-4xl lg:text-[32px] xl:text-[36px] font-extrabold tracking-tight text-white leading-[1.1] mb-4">
+            <div className="lg:col-span-6 text-left -translate-y-4 sm:-translate-y-5 lg:-translate-y-6">
+              <h1 className="text-xl sm:text-3xl lg:text-[28px] xl:text-[32px] font-extrabold tracking-tight text-white leading-[1.1] mb-4">
                 Introducing Graphic design <br />
                 Course in Kerala
               </h1>
 
               <p className="text-xs sm:text-sm text-gray-300/90 font-normal leading-relaxed max-w-[420px]">
-                RON Academy Transforms Your Career with the Most Practical Digital Marketing course.
-                Are you ready to secure your career with the most job- ready digital marketing
-                course in Kerala?
+                TRON Academy Transforms Your Career with the Most Practical Digital Marketing
+                course. Are you ready to secure your career with the most job- ready digital
+                marketing course in Kerala?
               </p>
             </div>
 
@@ -226,7 +227,7 @@ export default function MultimediaPage({ onOpenModal }) {
               <img
                 src="/6ea21a9a04b8b10b10b5556536c2b9e34c26b51c.png"
                 alt="Graphic Design Course in Kerala"
-                className="w-[360px] sm:w-[420px] lg:w-[450px] h-auto select-none pointer-events-none drop-shadow-2xl"
+                className="w-[300px] sm:w-[360px] lg:w-[400px] h-auto select-none pointer-events-none drop-shadow-2xl"
               />
             </div>
           </div>
@@ -237,7 +238,7 @@ export default function MultimediaPage({ onOpenModal }) {
       {/* 2. WHY CHOOSE TRON ACADEMY ? (Screenshot 1 Bottom) */}
       {/* ========================================================================= */}
       <section className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24 border-t border-purple-950/30 text-center">
-        <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-2">
+        <h2 className="text-2xl sm:text-5xl font-extrabold text-white tracking-tight mb-2">
           Why Choose <span className="text-[#a855f7]">Tron Academy ?</span>
         </h2>
         <h3 className="text-xl sm:text-2xl font-bold text-gray-200 mb-4">
@@ -411,33 +412,116 @@ export default function MultimediaPage({ onOpenModal }) {
       {/* ========================================================================= */}
       {/* 5. WHAT YOU'LL GET IN THE COURSE (Screenshot 3 Exact Match) */}
       {/* ========================================================================= */}
-      <section className="relative overflow-hidden py-24 sm:py-36 my-14 min-h-[460px] flex items-center">
-        {/* Exact Figma Purple Wave PNG Asset from public/ */}
+      <section
+        style={{ background: "transparent" }}
+        className="
+     relative
+     overflow-hidden
+     min-h-[430px]
+     py-16
+     flex
+     items-center
+   "
+      >
+        {/* Purple curved background — full-bleed, preserving wave silhouette */}
         <img
-          src="/cfa5b3c529829fa56d2f5efddfd560e9b4d219c8.png"
+          src="/dce55d37f0098f10eebf43fce5a063275334073b.png"
           alt=""
-          className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none z-0"
+          style={{
+            position: "absolute",
+            left: 0,
+            top: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "35% top",
+            pointerEvents: "none",
+            userSelect: "none",
+            zIndex: 0,
+            filter: "brightness(0.30) saturate(0.7)",
+          }}
         />
 
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            {/* Left Column: 5 Staggered White Pills matching Screenshot 3 */}
-            <div className="lg:col-span-7 flex flex-wrap gap-3 sm:gap-3.5">
+        <div
+          className="
+      relative
+      z-10
+      w-full
+      max-w-7xl
+      mx-auto
+      px-4
+      sm:px-6
+      lg:px-12
+    "
+        >
+          <div
+            className="
+        grid
+        grid-cols-1
+        lg:grid-cols-12
+        gap-8
+        lg:gap-10
+        items-center
+      "
+          >
+            {/* LEFT: WHITE PILLS */}
+            <div
+              className="
+          lg:col-span-7
+          flex
+          flex-wrap
+          justify-center
+          lg:justify-start
+          gap-3
+          sm:gap-3.5
+        "
+            >
               {whatYouGetItems.map((item, idx) => (
                 <div
                   key={idx}
-                  className="px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-white text-black font-bold text-xs sm:text-[13.5px] tracking-tight shadow-lg hover:scale-105 transition-transform select-none"
+                  className="
+              px-5
+              sm:px-6
+              py-2.5
+              sm:py-3
+              rounded-full
+              bg-white
+              text-black
+              font-bold
+              text-xs
+              sm:text-[13.5px]
+              tracking-tight
+              shadow-lg
+              hover:scale-105
+              transition-transform
+              select-none
+            "
                 >
                   {item}
                 </div>
               ))}
             </div>
 
-            {/* Right Column: Heading matching Screenshot 3 */}
-            <div className="lg:col-span-5 text-left lg:text-right">
-              <h2 className="text-3xl sm:text-4xl md:text-[46px] font-extrabold text-white tracking-tight leading-[1.16]">
-                What You'll Get <br />
-                in the Course
+            {/* RIGHT: HEADING */}
+            <div
+              className="
+          lg:col-span-5
+          text-center
+          lg:text-right
+        "
+            >
+              <h2
+                className="
+            text-2xl
+            sm:text-3xl
+            md:text-[38px]
+            font-extrabold
+            text-white
+            tracking-tight
+            leading-[1.16]
+          "
+              >
+                What You'll Get in the Course
               </h2>
             </div>
           </div>
