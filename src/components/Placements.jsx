@@ -44,19 +44,19 @@ export default function Placements() {
         </div>
 
         {/* Row 1: cards 0-3, moving LEFT */}
-        <div className="relative w-screen left-1/2 -translate-x-1/2 overflow-hidden mb-6">
+        <div className="relative w-screen left-1/2 -translate-x-1/2 overflow-hidden mb-6 ">
           <div className="placement-marquee-left">
             {[0, 1].map((groupIdx) => (
               <div className="placement-marquee-group" key={`left-group-${groupIdx}`}>
                 {assets.placementCards.slice(0, 4).map((card) => (
                   <div
                     key={`left-${groupIdx}-${card.id}`}
-                    className="relative w-[220px] sm:w-[240px] lg:w-[260px] h-[180px] sm:h-[190px] lg:h-[200px] shrink-0 flex items-center justify-center"
+                    className="relative w-[220px] sm:w-[240px] lg:w-[260px] h-[180px] sm:h-[190px] lg:h-[200px]  shrink-0 flex items-center justify-center "
                   >
                     <img
                       src={card.src}
                       alt={card.alt}
-                      className="max-w-full max-h-full object-cover drop-shadow-xl"
+                      className="max-w-full max-h-full rounded-lg object-cover drop-shadow-xl"
                     />
                   </div>
                 ))}
@@ -78,7 +78,7 @@ export default function Placements() {
                     <img
                       src={card.src}
                       alt={card.alt}
-                      className="max-w-full max-h-full object-cover drop-shadow-xl"
+                      className="max-w-full max-h-full object-cover rounded-lg drop-shadow-xl"
                     />
                   </div>
                 ))}

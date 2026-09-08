@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { X, Calendar, Clock, ArrowLeft, Share2, Sparkles, BookOpen } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { X, Calendar, Clock, ArrowLeft, Share2, Sparkles, BookOpen } from "lucide-react";
 
 export default function BlogPage({ onOpenModal, onNavigate }) {
   const [selectedPost, setSelectedPost] = useState(null);
 
   // Scroll to top when page mounts
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
   // 6 Blog Posts exactly matching the layout, images and titles in Screenshot 1
@@ -14,150 +14,113 @@ export default function BlogPage({ onOpenModal, onNavigate }) {
     {
       id: 1,
       title: "What is UGC and Why It's a Game Changer for Your Brand",
-      image: '/366819eb0ef7787ffe5c4940e94b51beee7766a9.jpg',
-      date: 'Jan 06, 2025',
-      readTime: '4 min read',
-      category: 'Digital Marketing & Content',
-      author: 'Tron Editorial Team',
-      excerpt: 'Discover why User-Generated Content (UGC) is transforming modern digital branding, driving higher engagement rates, and how creators leverage it for massive conversions.',
+      image: "/366819eb0ef7787ffe5c4940e94b51beee7766a9.jpg",
+      date: "Jan 06, 2025",
+      readTime: "4 min read",
+      category: "Digital Marketing & Content",
+      author: "Tron Editorial Team",
+      excerpt:
+        "Discover why User-Generated Content (UGC) is transforming modern digital branding, driving higher engagement rates, and how creators leverage it for massive conversions.",
       content: [
-        'User-Generated Content (UGC) is any content—text, videos, images, reviews—created by individuals rather than brands. In an era where consumers are increasingly skeptical of polished corporate advertising, UGC represents authentic, peer-driven validation.',
-        'Why does it work so effectively? Modern algorithms on TikTok, Instagram Reels, and YouTube Shorts strongly reward authentic storytelling. When real people demonstrate real experiences with products, click-through rates jump by over 40% compared to traditional studio commercials.',
-        'At Tron Academy, our Digital Marketing & Content Creation programs train creators and brand strategists to shoot, edit, and optimize UGC campaigns that convert viewers into loyal brand advocates.',
-      ]
+        "User-Generated Content (UGC) is any content—text, videos, images, reviews—created by individuals rather than brands. In an era where consumers are increasingly skeptical of polished corporate advertising, UGC represents authentic, peer-driven validation.",
+        "Why does it work so effectively? Modern algorithms on TikTok, Instagram Reels, and YouTube Shorts strongly reward authentic storytelling. When real people demonstrate real experiences with products, click-through rates jump by over 40% compared to traditional studio commercials.",
+        "At Tron Academy, our Digital Marketing & Content Creation programs train creators and brand strategists to shoot, edit, and optimize UGC campaigns that convert viewers into loyal brand advocates.",
+      ],
     },
     {
       id: 2,
-      title: 'No Tech Skills? No Problem – Coding Is Easy!',
-      image: '/239e6ff45eff39b06f3b029f2dccdd64a4398837.jpg',
-      date: 'Jan 06, 2025',
-      readTime: '5 min read',
-      category: 'Programming & Web Dev',
-      author: 'Tron Tech Faculty',
-      excerpt: 'Breaking into programming doesn’t require a math degree or years of background experience. Here is how beginners can master coding with hands-on practice.',
+      title: "No Tech Skills? No Problem – Coding Is Easy!",
+      image: "/239e6ff45eff39b06f3b029f2dccdd64a4398837.jpg",
+      date: "Jan 06, 2025",
+      readTime: "5 min read",
+      category: "Programming & Web Dev",
+      author: "Tron Tech Faculty",
+      excerpt:
+        "Breaking into programming doesn’t require a math degree or years of background experience. Here is how beginners can master coding with hands-on practice.",
       content: [
-        'Many aspiring developers hesitate to start because they believe programming is all about high-level calculus or complex algorithms. In reality, modern programming is about structured problem-solving and logic.',
-        'Languages like Python and JavaScript were designed with intuitive syntax that reads almost like plain English. When combined with modern developer tooling, visual debuggers, and component-based architectures like React, the learning curve is smoother than ever.',
-        'At Tron Academy, 90% of our curriculum is dedicated to building real, live projects from Day 1. Instead of getting bogged down in abstract theory, you build functional web applications and deploy them to the cloud.',
-      ]
+        "Many aspiring developers hesitate to start because they believe programming is all about high-level calculus or complex algorithms. In reality, modern programming is about structured problem-solving and logic.",
+        "Languages like Python and JavaScript were designed with intuitive syntax that reads almost like plain English. When combined with modern developer tooling, visual debuggers, and component-based architectures like React, the learning curve is smoother than ever.",
+        "At Tron Academy, 90% of our curriculum is dedicated to building real, live projects from Day 1. Instead of getting bogged down in abstract theory, you build functional web applications and deploy them to the cloud.",
+      ],
     },
     {
       id: 3,
-      title: 'Common Mistakes Beginners Make While Learning Programming',
-      image: '/bbce438de1c194693f4d63824df229311adb4660.jpg',
-      date: 'Jan 07, 2025',
-      readTime: '6 min read',
-      category: 'Career & Learning',
-      author: 'Tron Mentorship Board',
-      excerpt: 'From tutorial hell to skipping fundamental problem-solving, avoid the most common pitfalls that slow down aspiring developers.',
+      title: "Common Mistakes Beginners Make While Learning Programming",
+      image: "/bbce438de1c194693f4d63824df229311adb4660.jpg",
+      date: "Jan 07, 2025",
+      readTime: "6 min read",
+      category: "Career & Learning",
+      author: "Tron Mentorship Board",
+      excerpt:
+        "From tutorial hell to skipping fundamental problem-solving, avoid the most common pitfalls that slow down aspiring developers.",
       content: [
         'The most frequent trap beginner coders fall into is "Tutorial Hell"—passively watching hour after hour of coding videos without typing code or solving unexpected bugs independently.',
-        'Another common mistake is trying to learn five languages at the same time instead of mastering core fundamentals in one. Depth beats superficial breadth when preparing for high-paying junior developer positions.',
-        'Finally, beginners often neglect version control (Git) and documentation. Developing good habits early—such as clean commits, debugging with console logs, and reading error stack traces—will set you apart in any technical interview.',
-      ]
+        "Another common mistake is trying to learn five languages at the same time instead of mastering core fundamentals in one. Depth beats superficial breadth when preparing for high-paying junior developer positions.",
+        "Finally, beginners often neglect version control (Git) and documentation. Developing good habits early—such as clean commits, debugging with console logs, and reading error stack traces—will set you apart in any technical interview.",
+      ],
     },
     {
       id: 4,
-      title: 'Digital Marketing: Trends to Watch Out for in 2025',
-      image: '/88a28dfe4beb693fea2c6af07b613434d4cb7341.jpg',
-      date: 'Jan 08, 2025',
-      readTime: '5 min read',
-      category: 'Digital Strategy',
-      author: 'Tron Editorial Team',
-      excerpt: 'Explore the key digital marketing trends in 2025, from AI-powered personalization to immersive storytelling and voice search optimization.',
+      title: "Digital Marketing: Trends to Watch Out for in 2025",
+      image: "/88a28dfe4beb693fea2c6af07b613434d4cb7341.jpg",
+      date: "Jan 08, 2025",
+      readTime: "5 min read",
+      category: "Digital Strategy",
+      author: "Tron Editorial Team",
+      excerpt:
+        "Explore the key digital marketing trends in 2025, from AI-powered personalization to immersive storytelling and voice search optimization.",
       content: [
-        'Digital marketing is entering a transformative era where artificial intelligence, immersive AR/VR experiences, and conversational search dictate how brands connect with consumers.',
-        'Brands that adapt early to predictive algorithms and data ethics gain a massive edge in establishing credibility and loyal customer advocacy.',
-        'Tron Academy’s Digital Marketing programs prepare students to lead real campaigns equipped with the latest 2025 growth methodologies.',
-      ]
-    },
-    {
-      id: 5,
-      title: 'No Tech Skills? No Problem – Coding Is Easy!',
-      image: '/366819eb0ef7787ffe5c4940e94b51beee7766a9.jpg',
-      date: 'Jan 09, 2025',
-      readTime: '5 min read',
-      category: 'Software Engineering',
-      author: 'Tron Tech Faculty',
-      excerpt: 'Why non-technical professionals are transitioning to tech faster than ever with Tron’s mentor-led project sprints.',
-      content: [
-        'Whether your background is in commerce, arts, or hospitality, technical literacy is one of the highest leverage skills of the 21st century.',
-        'You do not need to memorize thousands of functions. Programming in the modern era is about learning how to decompose complex tasks into manageable micro-steps and using libraries effectively.',
-        'With 1-on-1 mentor guidance, weekly code reviews, and mock technical screenings, Tron students transform into job-ready developers within months.',
-      ]
-    },
-    {
-      id: 6,
-      title: 'Common Mistakes Beginners Make While Learning Programming',
-      image: '/239e6ff45eff39b06f3b029f2dccdd64a4398837.jpg',
-      date: 'Jan 10, 2025',
-      readTime: '5 min read',
-      category: 'Student Insights',
-      author: 'Tron Mentorship Board',
-      excerpt: 'Crucial advice on debugging patience, clean code conventions, and how to build a GitHub portfolio that lands interviews.',
-      content: [
-        'When code breaks, beginners often panic or rewrite everything from scratch. Seasoned developers know that debugging is 80% of the job.',
-        'Learning how to read error messages carefully and isolate the exact line causing issues is the single biggest leap toward becoming an independent programmer.',
-        'Tron Academy provides intensive pair programming sessions that instill industry-standard problem decomposition skills and best practices.',
-      ]
+        "Digital marketing is entering a transformative era where artificial intelligence, immersive AR/VR experiences, and conversational search dictate how brands connect with consumers.",
+        "Brands that adapt early to predictive algorithms and data ethics gain a massive edge in establishing credibility and loyal customer advocacy.",
+        "Tron Academy’s Digital Marketing programs prepare students to lead real campaigns equipped with the latest 2025 growth methodologies.",
+      ],
     },
   ];
 
   const handleOpenBlog = (post) => {
     // If it's the UGC blog, navigate to dedicated Blog Detail Page
-    if (
-      post.id === 1 ||
-      post.title.toLowerCase().includes('ugc')
-    ) {
+    if (post.id === 1 || post.title.toLowerCase().includes("ugc")) {
       if (onNavigate) {
-        onNavigate('blog-ugc');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        onNavigate("blog-ugc");
+        window.scrollTo({ top: 0, behavior: "smooth" });
         return;
       }
     }
     // If it's the Coding Easy blog, navigate to dedicated Blog Detail Page
-    if (
-      post.id === 2 ||
-      post.id === 5 ||
-      post.title.toLowerCase().includes('no tech skills')
-    ) {
+    if (post.id === 2 || post.id === 5 || post.title.toLowerCase().includes("no tech skills")) {
       if (onNavigate) {
-        onNavigate('blog-coding-easy');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        onNavigate("blog-coding-easy");
+        window.scrollTo({ top: 0, behavior: "smooth" });
         return;
       }
     }
     // If it's the Common Mistakes blog, navigate to dedicated Blog Detail Page
-    if (
-      post.id === 3 ||
-      post.id === 6 ||
-      post.title.toLowerCase().includes('common mistakes')
-    ) {
+    if (post.id === 3 || post.id === 6 || post.title.toLowerCase().includes("common mistakes")) {
       if (onNavigate) {
-        onNavigate('blog-common-mistakes');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        onNavigate("blog-common-mistakes");
+        window.scrollTo({ top: 0, behavior: "smooth" });
         return;
       }
     }
     // If it's the Digital Marketing blog, navigate to dedicated Blog Detail Page
     if (
       post.id === 4 ||
-      post.title.toLowerCase().includes('digital marketing') ||
-      post.title.toLowerCase().includes('trends to watch')
+      post.title.toLowerCase().includes("digital marketing") ||
+      post.title.toLowerCase().includes("trends to watch")
     ) {
       if (onNavigate) {
-        onNavigate('blog-digital-marketing');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        onNavigate("blog-digital-marketing");
+        window.scrollTo({ top: 0, behavior: "smooth" });
         return;
       }
     }
     setSelectedPost(post);
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
   };
 
   const handleCloseBlog = () => {
     setSelectedPost(null);
-    document.body.style.overflow = 'auto';
+    document.body.style.overflow = "auto";
   };
 
   return (
@@ -167,7 +130,6 @@ export default function BlogPage({ onOpenModal, onNavigate }) {
       <div className="absolute top-[800px] left-1/4 -translate-x-1/2 w-[550px] h-[400px] bg-fuchsia-950/10 rounded-full blur-[160px] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-14 pb-20">
-
         {/* ========================================================================= */}
         {/* 1. HEADER SECTION (Screenshot 1) */}
         {/* ========================================================================= */}
@@ -179,8 +141,10 @@ export default function BlogPage({ onOpenModal, onNavigate }) {
 
           {/* Subtitle matching Screenshot 1 */}
           <p className="mt-4 sm:mt-5 text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed font-light">
-            Curious minds welcome!<br />
-            Check out our blog for a treasure trove of ideas, stories, and insights<br className="hidden sm:inline" />
+            Curious minds welcome!
+            <br />
+            Check out our blog for a treasure trove of ideas, stories, and insights
+            <br className="hidden sm:inline" />
             that can inspire your learning journey.
           </p>
         </header>
@@ -235,7 +199,8 @@ export default function BlogPage({ onOpenModal, onNavigate }) {
 
           {/* Subtitle matching Screenshot 2 */}
           <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed font-light mb-4 max-w-2xl mx-auto">
-            If your blog catches our eyes, we’ll give it the spotlight. Show<br className="hidden sm:inline" />
+            If your blog catches our eyes, we’ll give it the spotlight. Show
+            <br className="hidden sm:inline" />
             us what you’ve got send it to
           </p>
 
@@ -249,7 +214,6 @@ export default function BlogPage({ onOpenModal, onNavigate }) {
             </a>
           </div>
         </section>
-
       </div>
 
       {/* ========================================================================= */}

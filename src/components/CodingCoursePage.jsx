@@ -78,18 +78,6 @@ export default function CodingCoursePage({ onOpenModal, onNavigate }) {
       date: "07/01/2025",
       image: "/88a28dfe4beb693fea2c6af07b613434d4cb7341.jpg",
     },
-    {
-      id: 5,
-      title: "Digital Marketing: Trends to Watch Out for in 2025",
-      date: "07/01/2025",
-      image: "/88a28dfe4beb693fea2c6af07b613434d4cb7341.jpg",
-    },
-    {
-      id: 6,
-      title: "Digital Marketing: Trends to Watch Out for in 2025",
-      date: "07/01/2025",
-      image: "/88a28dfe4beb693fea2c6af07b613434d4cb7341.jpg",
-    },
   ];
 
   // Why choose Tron feature items matching Screenshot 2
@@ -499,17 +487,76 @@ export default function CodingCoursePage({ onOpenModal, onNavigate }) {
                 </div>
               </div>
             </div>
-
             {/* Main Video Visual Canvas */}
-            <div className="my-auto py-6 sm:py-10 z-10 max-w-xl">
-              <h3 className="text-xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">
+            <div className="my-auto py-5 sm:py-8 md:py-10 z-10 w-full max-w-xl">
+              <h3
+                className="
+    text-lg
+    sm:text-3xl
+    md:text-4xl
+    lg:text-5xl
+    font-black
+    text-white
+    tracking-tight
+    leading-[1.15]
+    sm:leading-tight
+    max-w-full
+  "
+              >
                 Using visual development for professional, scalable sites
               </h3>
-              <p className="text-xs sm:text-sm text-gray-300 mt-2">Webflow customer story</p>
+
+              <p
+                className="
+    text-[10px]
+    sm:text-xs
+    md:text-sm
+    text-gray-300
+    mt-2
+    sm:mt-3
+  "
+              >
+                Webflow customer story
+              </p>
 
               {/* YouTube Play Icon */}
-              <div className="mt-6 inline-flex items-center justify-center w-16 h-12 sm:w-20 sm:h-14 rounded-2xl bg-red-600 group-hover:bg-red-500 group-hover:scale-110 text-white shadow-xl shadow-red-950/60 transition-all duration-300">
-                <Play className="w-7 h-7 fill-white ml-0.5" />
+              <div
+                className="
+    mt-4
+    sm:mt-6
+    inline-flex
+    items-center
+    justify-center
+    w-12
+    h-10
+    sm:w-16
+    sm:h-12
+    md:w-20
+    md:h-14
+    rounded-xl
+    sm:rounded-2xl
+    bg-red-600
+    group-hover:bg-red-500
+    group-hover:scale-110
+    text-white
+    shadow-xl
+    shadow-red-950/60
+    transition-all
+    duration-300
+  "
+              >
+                <Play
+                  className="
+      w-5
+      h-5
+      sm:w-6
+      sm:h-6
+      md:w-7
+      md:h-7
+      fill-white
+      ml-0.5
+    "
+                />
               </div>
             </div>
 

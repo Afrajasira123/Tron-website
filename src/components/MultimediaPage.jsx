@@ -202,7 +202,7 @@ export default function MultimediaPage({ onOpenModal }) {
         <img
           src="/1b511a9bfee094c1138078cba513f7a70fa33a32.png"
           alt=""
-          className="absolute left-0 -top-20 sm:-top-24 lg:-top-28 w-full h-[520px] sm:h-[600px] lg:h-[680px] object-cover object-top select-none pointer-events-none z-0 brightness-[0.200] saturate-[0.75] hue-rotate-[15deg] opacity-90"
+          className="absolute left-0 -top-20 sm:-top-24 lg:-top-28 w-full h-[520px] sm:h-[600px] lg:h-[680px] object-full object-top select-none pointer-events-none z-0 brightness-[0.200] saturate-[0.75] hue-rotate-[15deg] opacity-90"
         />
 
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
