@@ -10,10 +10,10 @@ export default function FAQ({ onOpenModal }) {
   };
 
   return (
-    <section className="relative py-24 bg-transparent">
+    <section className="relative py-24 bg-transparent overflow-hidden">
 
       {/* Glow Effects */}
-      <div className="absolute top-1/3 left-1/4 w-[500px] h-[400px] bg-purple-700/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/3 left-1/4 w-[300px] sm:w-[500px] h-[300px] sm:h-[400px] bg-purple-700/10 rounded-full blur-[100px] sm:blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">

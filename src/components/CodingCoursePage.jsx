@@ -114,16 +114,6 @@ export default function CodingCoursePage({ onOpenModal, onNavigate }) {
     },
   ];
 
-  // Partner brands matching Screenshot 1
-  const partnerBrands = [
-    { name: "acme", icon: "▲" },
-    { name: "atica", icon: "◬" },
-    { name: "circle", icon: "◯" },
-    { name: "goldline", icon: "❙❙❙" },
-    { name: "stari", icon: "✦" },
-    { name: "Radiyal", icon: "✱" },
-  ];
-
   // Course offerings matching Screenshot 3
   const courseCards = [
     {
@@ -303,7 +293,7 @@ export default function CodingCoursePage({ onOpenModal, onNavigate }) {
         </div>
 
         {/* Partner / Client Logos Strip */}
-        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 py-4 mb-10 text-gray-500 text-xs sm:text-sm border-t border-b border-purple-950/40">
+        {/* <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 py-4 mb-10 text-gray-500 text-xs sm:text-sm border-t border-b border-purple-950/40">
           <span className="text-gray-400 font-medium">Upskilling teams with more projects</span>
           <div className="flex flex-wrap items-center gap-6 sm:gap-10">
             {partnerBrands.map((brand) => (
@@ -316,7 +306,7 @@ export default function CodingCoursePage({ onOpenModal, onNavigate }) {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Video Showcase Card 1 (Webflow / GSAP Interactive Player Frame) */}
         <div className="relative max-w-4xl mx-auto rounded-2xl md:rounded-3xl border border-purple-500/30 bg-[#0c0818]/90 p-2 sm:p-4 shadow-[0_0_50px_rgba(126,34,206,0.22)]">

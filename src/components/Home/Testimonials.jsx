@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const testimonialsList = [
@@ -52,6 +52,22 @@ export default function Testimonials() {
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
   const isDragging = useRef(false);
+
+  // Responsive card width to match the CSS breakpoints on the cards
+  const [cardWidth, setCardWidth] = useState(580);
+
+  useEffect(() => {
+    const updateCardWidth = () => {
+      const vw = window.innerWidth;
+      if (vw >= 1024) setCardWidth(580);
+      else if (vw >= 768) setCardWidth(540);
+      else if (vw >= 640) setCardWidth(500);
+      else setCardWidth(320);
+    };
+    updateCardWidth();
+    window.addEventListener('resize', updateCardWidth);
+    return () => window.removeEventListener('resize', updateCardWidth);
+  }, []);
 
   const total = testimonialsList.length;
 
@@ -139,7 +155,8 @@ export default function Testimonials() {
           className="flex items-center transition-transform duration-600 ease-[cubic-bezier(0.25,1,0.5,1)]"
           style={{
             // Centers whichever card is active in the middle of viewport
-            transform: `translateX(calc(50vw - ${(activeIndex * 580) + 290}px))`
+            // cardWidth changes per breakpoint to match the w-[Xpx] class on each card
+            transform: `translateX(calc(50vw - ${activeIndex * cardWidth + cardWidth / 2}px))`
           }}
         >
           {testimonialsList.map((item, idx) => {

@@ -5,7 +5,7 @@ export default function Ecosystem() {
   return (
     <section className="relative py-24 bg-transparent overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 text-center">
-        {/* Title Matching Screenshot 4 & 5 */}
+        {/* Title */}
         <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-6">
           “Tron : Your Success Partners”
         </h2>
@@ -18,23 +18,30 @@ export default function Ecosystem() {
           crucial for success.
         </p>
 
-        {/* 4 Brand Logos Side-by-Side (Exact Screenshot 5 Match) */}
+        {/* 4 Brand Logos */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto items-center">
           {assets.ecosystem.map((brand) => (
             <div
               key={brand.name}
               className="flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300"
             >
-              <img
-                src={brand.src}
-                alt={brand.name}
-                className="h-28 sm:h-36 w-auto object-contain drop-shadow-lg"
-                loading="lazy"
-              />
+              <a
+                href={brand.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Visit ${brand.name}`}
+              >
+                <img
+                  src={brand.src}
+                  alt={brand.name}
+                  className="h-28 sm:h-36 w-auto object-contain drop-shadow-lg cursor-pointer"
+                  loading="lazy"
+                />
+              </a>
             </div>
           ))}
         </div>
       </div>
     </section>
   );
-}
+}  

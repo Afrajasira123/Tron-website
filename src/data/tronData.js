@@ -111,22 +111,26 @@ export const assets = {
     {
       name: "TRON DIGITAL",
       src: "/f45fbda5ba6c2dd693e52c92c2d2b40c7a2ebc8d.png",
-      color: "#c026d3"
+      color: "#c026d3",
+      link: "https://www.instagram.com/tronacademysocial?stkn=MTN0ZWRocDBrYm5veQ==",
     },
     {
       name: "TRON TECHNOLOGY",
       src: "/83d0179bf22e08b3bddacfedbe73c173466d6364.png",
-      color: "#f59e0b"
+      color: "#f59e0b",
+      link: "https://www.instagram.com/trontechnologies_?stkn=aWQyaG5lYXV4eWw3",
     },
     {
       name: "TRON MARKETING",
       src: "/67bc981d6a65a8152a4f0e578220223dc2830f9b.png",
-      color: "#06b6d4"
+      color: "#06b6d4",
+      link: "https://www.instagram.com/trondigital_?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==0",
     },
     {
       name: "TRON STUDIO",
       src: "/a6bc7922fe48c527be863442ba3b2dadbee41a09.png",
-      color: "#f43f5e"
+      color: "#f43f5e",
+      link: "https://www.instagram.com/tronstudio_?stkn=MWNlNTFocng0aW16dg==",
     }
   ],
   events: [

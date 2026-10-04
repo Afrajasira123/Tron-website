@@ -8,7 +8,7 @@ export default function Hero({ onOpenModal }) {
       id="hero"
       className="
         relative
-        min-h-screen
+        lg:min-h-screen
         flex
         flex-col
         justify-center
@@ -18,8 +18,8 @@ export default function Hero({ onOpenModal }) {
         lg:px-8
         bg-transparent
         overflow-hidden
-        py-20
-        sm:py-16
+        py-10
+        sm:py-14
         lg:py-0
       "
     >
